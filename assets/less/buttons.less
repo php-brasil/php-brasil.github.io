@@ -1,0 +1,59 @@
+.btn-outline-light {
+	color: white;
+	border: 1px solid white;
+	background: transparent;
+	.transition-all;
+	&:hover,
+	&:focus {
+		color: @theme-primary;
+		background: white;
+		outline: none;
+	}
+}
+
+.btn-outline-dark {
+	color: @theme-dark;
+	border: 1px solid @theme-dark;
+	background: transparent;
+	.transition-all;
+	&:hover,
+	&:focus {
+		color: white;
+		background: @theme-primary;
+		border-color: @theme-primary;
+		outline: none;
+	}
+}
+
+.btn {
+	border-radius: 0;
+	padding: 12px 18px;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 1px;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active {
+	outline: none;
+}
+
+.btn-full-width {
+	border: 0;
+	border-radius: 0;
+	background-color: @theme-dark;
+	color: white;
+	padding: 50px 0;
+	font-size: 26px;
+	font-weight: 200;
+	letter-spacing: normal;
+	text-transform: none;
+	&:hover {
+		background-color: @theme-primary;
+		color: white;
+	}
+	&:focus {
+		color: white;
+	}
+}

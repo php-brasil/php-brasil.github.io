@@ -1,0 +1,120 @@
+header {
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	min-height: 100%;
+	background-color: @theme-dark;
+	background: no-repeat center center; 
+	background-attachment: scroll;
+	.background-cover;
+	padding: 100px 0;
+	.intro-content {
+		color: white;
+		text-align: center;
+		position: relative;
+	}
+	.brand-name {
+		.heading-font;
+		font-size: 55px;
+		line-height: 55px;
+		text-transform: uppercase;
+		font-weight: 900;
+		margin-top: 15px;
+	}
+	.brand-name-subtext {
+		font-size: 20px;
+		line-height: 20px;
+		font-weight: 300;
+	}
+	img {
+		max-width: 150px;
+		max-height: 150px;
+	}
+	.scroll-down {
+		position: absolute;
+		width: 100%;
+		bottom: 20px;
+		text-align: center;
+		.btn {
+			height: 50px;
+			width: 50px;
+			border: 2px solid white;
+			border-radius: 100%;
+			line-height: 50px;
+			padding: 0;
+			letter-spacing: normal;
+			color: white;
+			font-size: 30px;
+			.transition-all;
+			&:hover {
+				color: fade(white, 50%);
+				border-color: fade(white, 50%);
+				outline: none;
+			}
+		}
+	}
+}
+
+@media(min-width:768px) {
+	header {
+		height: 100%;
+		width: 100%;
+		padding: 0;
+		background-attachment: scroll;
+		.intro-content {
+			color: white;
+			text-align: center;
+			width: 50%;
+			margin: auto;
+			position: absolute;
+			top: 50%; left: 50%;
+			-webkit-transform: translate(-50%,-50%);
+			-ms-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%);
+		}
+		.brand-name {
+			font-size: 80px;
+			line-height: 80px;
+		}
+		.brand-name-subtext {
+			font-size: 30px;
+			line-height: 30px;
+		}
+		img {
+			max-width: 300px;
+			max-height: 300px;
+		}		
+  	}
+}
+
+@media(min-width:1025px) {
+	header {
+		background-attachment: fixed;
+  	}
+}
+
+header.video {
+	.overlay {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background: #000;
+		z-index: 998;
+		opacity: 0;
+	}
+	.intro-content {
+		z-index: 999;
+	}
+	.scroll-down {
+		z-index: 999;
+	}
+}
+
+@media(min-width:768px) {
+	header.video {
+		.overlay {
+			opacity: 0.5;
+		}
+	}
+}

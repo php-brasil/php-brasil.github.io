@@ -1,0 +1,32 @@
+footer.footer {
+	color: fade(white, 70%);
+	background: no-repeat center center scroll;
+	.background-cover;
+	padding: 50px 0 20px;
+	a {
+		color: fade(white, 70%);
+		&:hover {
+			color: white;
+		}
+	}	
+	p {
+		font-size: 22px;
+	}
+	.contact-details {
+		margin: 75px 0;
+	}
+	.social {
+		margin-bottom: 75px;
+	}
+	.copyright {
+		p.small {
+			font-size: 14px;
+		}
+	}
+}
+
+@media(min-width:1025px) {
+	footer.footer {
+		background-attachment: fixed;
+	}
+}
